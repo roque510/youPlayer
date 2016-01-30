@@ -1,0 +1,396 @@
+
+/**
+ * Icons
+ * -----------------------------------------------------------------------------
+ */
+.jp-button button:before,
+.icon:before {
+  display: inline-block;
+  font-family: "themicons";
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  letter-spacing: normal;
+  speak: none;
+  text-decoration: inherit;
+  text-transform: none;
+  vertical-align: top;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+}
+
+/**
+ * Animations
+ * -----------------------------------------------------------------------------
+ */
+.fade-in,
+.fade-out {
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -webkit-transform: translatez();
+  transform: translatez();
+}
+.fade-in {
+  -webkit-animation: fade-in 0.4s ease-in;
+  animation: fade-in 0.4s ease-in;
+}
+.fade-out {
+  -webkit-animation: fade-out 0.4s ease-in;
+  animation: fade-out 0.4s ease-in;
+}
+@-webkit-keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@-webkit-keyframes fade-out {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes fade-out {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+.demo {
+  padding: 3.57142857em 1.42857143em;
+  max-width: 420px;
+  margin: auto;
+}
+.demo-header {
+  margin-bottom: 3.57142857em;
+  text-align: center;
+}
+.demo-header h1,
+.demo-header h2 {
+  line-height: 1.25;
+}
+.demo-header h2 {
+  color: rgba(0, 0, 0, 0.42);
+  font-size: 33px;
+  font-size: 2.1rem;
+  font-weight: 400;
+  margin-bottom: 0.95238095em;
+}
+.demo-header h3 {
+  margin-bottom: 0.71428571em;
+  font-size: 22px;
+  font-size: 1.4rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+.demo-header a {
+  text-decoration: underline;
+}
+.github-ribbon {
+  display: none;
+}
+.credits {
+  color: rgba(0, 0, 0, 0.42);
+  font-size: 19px;
+  font-size: 1.2rem;
+  text-align: center;
+}
+.credits p {
+  margin-bottom: 0;
+}
+@media (min-width: 480px) {
+  .github-ribbon {
+    display: block;
+  }
+}
+/**
+ * Player
+ * -----------------------------------------------------------------------------
+ */
+.audio-player {
+  border: 1px solid #d4d5d6;
+  color: #5c5f66;
+  font-size: 22px;
+  font-size: 1.4rem;
+  margin: 0 auto 4.28571429em;
+  position: relative;
+  -webkit-transition: left 0.4s ease-in-out;
+  transition: left 0.4s ease-in-out;
+  width: 15.85714286em;
+}
+.jp-jplayer {
+  height: 0px;
+  width: 0px;
+}
+.jp-audio {
+  overflow: hidden;
+  position: relative;
+}
+.jp-no-solution {
+  padding: 0.92857143em 1.42857143em;
+}
+/* Track Info */
+.track-info {
+  
+}
+.track-poster {
+
+}
+.track-title,
+.track-artist,
+.track-record {
+ 
+}
+.track-title {
+  
+}
+.track-artist,
+.track-record {
+  
+}
+.track-record {
+ 
+}
+/* jPlayer: Cotrols
+----------------------------------------------- */
+.jp-controls-wrap {
+  
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  
+  -webkit-transition: background-color 0.4s ease-in-out;
+  transition: background-color 0.4s ease-in-out;
+  z-index: 1;
+}
+.jp-controls {
+  opacity: 1;
+  -webkit-transition: opacity 0.4s ease-in-out;
+  transition: opacity 0.4s ease-in-out;
+}
+.jp-button {
+  position: absolute;
+  
+}
+.jp-button button {
+  background: transparent;
+  border: 2px solid grey;
+  border-radius: 100%;
+  color: grey;
+  display: block;
+  height: 3.33333333em;
+  
+  letter-spacing: 0;
+  padding: 0;
+  margin: 0;
+  text-indent: 110%;
+  -webkit-transition: color 0.2s ease-in-out, border-color 0.2s ease-in-out;
+  transition: color 0.2s ease-in-out, border-color 0.2s ease-in-out;
+  width: 3.33333333em;
+}
+.jp-button button:before {
+  font-size: 15px;
+  font-size: 2.1rem;
+  line-height: 1.85714286;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  text-align: center;
+  text-indent: 0.04761905em;
+}
+.jp-button button:hover {
+  border-color: #e4002b;
+  color: #e4002b;
+}
+.jp-button-play {
+  left: 50%;
+  margin-top: -1.78571429em;
+  margin-left: -1.78571429em;
+}
+.jp-button-play button {
+  font-size: 22px;
+  font-size: 1.4rem;
+  height: 3.57142857em;
+  width: 3.57142857em;
+}
+.jp-button-play button:before {
+  content: "\f152";
+  font-size: 38px;
+  font-size: 2.4rem;
+  line-height: 1.91666667;
+  text-indent: 0.16666667em;
+}
+.jp-state-playing .jp-button-play button:before {
+  content: "\f151";
+  text-indent: 0;
+}
+.jp-button-previous,
+.jp-button-next {
+  margin-top: -1.42857143em;
+  margin-left: -1.42857143em;
+}
+.jp-button-previous button:before,
+.jp-button-next button:before {
+  font-size: 21px;
+}
+.jp-button-previous {
+  left: 25%;
+}
+.jp-button-previous button:before {
+  content: "\f156";
+}
+.jp-button-next {
+  left: 75%;
+}
+.jp-button-next button:before {
+  content: "\f155";
+}
+.jp-button-playlist {
+  display: none;
+}
+.jp-button-playlist button:before {
+  content: "\f153";
+}
+/* jPlayer: Playlist
+----------------------------------------------- */
+.jp-playlist {
+  
+  border: solid #d4d5d6;
+  border-width: 1px 0 0 0;
+  font-size: 19px;
+  font-size: 1.2rem;
+}
+.jp-playlist ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+.jp-playlist li {
+  border-bottom: 1px solid #d4d5d6;
+}
+.jp-playlist li:last-child {
+  border-bottom-width: 0;
+}
+.jp-playlist a {
+  display: block;
+  outline: 0;
+  padding: 0.92857143em 1.42857143em;
+}
+.jp-playlist a:hover,
+.jp-playlist a:focus {
+  background-color: #f2f2f2;
+  text-decoration: none;
+}
+.jp-playlist-item {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.jp-state-playing .jp-playlist-current a {
+  background-color: #f2f2f2;
+  color: #000000;
+  text-decoration: none;
+}
+.jp-artist,
+.jp-free-media {
+  display: none;
+}
+.jp-playlist-item-remove {
+  display: inline-block;
+  float: right;
+}
+/* Playlist: Bottom */
+.playlist-hide .jp-playlist {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  left: 0;
+}
+/* Playlist: Bottom */
+.playlist-bottom .jp-audio {
+  overflow: visible;
+}
+.playlist-bottom .jp-playlist {
+  display: block;
+}
+/* Playlist: Scroll */
+.playlist-scroll .jp-audio {
+  overflow: auto;
+}
+.playlist-scroll .jp-playlist {
+  display: block;
+  position: absolute;
+  top: 100%;
+  right: 0;
+  left: 0;
+}
+/* Playlist: Side */
+.playlist-side {
+  left: -110px;
+}
+.playlist-side .jp-audio {
+  overflow: visible;
+}
+.playlist-side .jp-interface {
+  box-shadow: 1px 0 #d4d5d6;
+  position: relative;
+  z-index: 2;
+}
+.playlist-side .jp-playlist {
+  border-width: 0 1px;
+  box-shadow: 0 1px #d4d5d6, 0 -1px #d4d5d6;
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 100%;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  -webkit-transition: left 0.4s ease-in-out;
+  transition: left 0.4s ease-in-out;
+  z-index: 1;
+}
+/* jPlayer: Progress Bar
+----------------------------------------------- */
+.jp-time-rail {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  left: 0;
+}
+.jp-time-rail .jp-progress {
+  background-color: rgba(255, 255, 255, 0.15);
+  border: solid rgba(0, 0, 0, 0.17);
+  border-width: 1px 0;
+  width: 100%;
+  height: 8px;
+}
+.jp-time-rail .jp-seek-bar:hover {
+  cursor: pointer;
+}
+.jp-time-rail .jp-play-bar {
+  background-color: #e4002b;
+  height: 8px;
+  margin-top: -1px;
+  opacity: .8;
+}
+

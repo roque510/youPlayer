@@ -16,6 +16,10 @@ require_once("funciones.php");
     <link rel="stylesheet" href="css/app.css" />
     <link type="text/css" href="css/themicons.css" rel="stylesheet" media="all">
     <link type="text/css" href="css/stylea.css" rel="stylesheet" media="all">
+    <link href="css/flat.audio.css" rel="stylesheet" type="text/css" />
+<link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:600' rel='stylesheet' type='text/css' />
+
+
     
     
 
@@ -124,36 +128,32 @@ switch ($page) {
 
 
 
-<div class="row audioBar" style="padding-top:20px; margin-left:0px; height:10%; border-bottom-left-radius:25px; border-bottom-right-radius:25px; width:100%; background-color: rgba(3, 63, 119, 0.49);">
+<div class="row audioBar" style="padding-top:5px; padding-right:5px; padding-left:5px; margin-left:0px; height:80px; border-bottom-left-radius:25px; border-bottom-right-radius:25px; width:100%; background-color: rgba(3, 63, 119, 0.49);">
   
-        <div id="musiconPlayer" class="jp-jplayer"></div>
+    <div class="responsive-wrapper">
+  
 
-        <div id="jp_container_1" class="jp-audio" role="application" aria-label="media player">
-        <div class="jp-current-time " role="timer" style="position: absolute; margin-top:0px; color: white; text-shadow: 0.1em 0.1em 0.1em black;" aria-label="time">&nbsp;</div>
-          <div class="jp-interface large-12 columns">
+<div id="musiconPlayer" class="jp-jplayer"></div>
 
-            <div class="jp-button jp-playpause-button " style="margin-left: 40%; margin-right:14%;">
-              <button class="jp-play" role="button" tabindex="0">play</button>
-            </div>
-            
-        
-            
-            <div class="jp-button jp-volume-button ">
-              <button class="jp-mute" role="button" tabindex="0">max volume</button>
-            </div>
-            <div class="jp-volume-bar hide-for-small-only">
-              <div class="jp-volume-bar-value"></div>
-            </div>
-          </div>
-       
-          <div class="jp-no-solution">
-            <span>Update Required</span>
-            To play the media you will need to either update your browser to a recent version or update your <a href="http://get.adobe.com/flashplayer/" target="_blank">Flash plugin</a>.
-          </div>
-          <div class="jp-details" style="position: absolute;  margin-top:-30px; height: 40px; overflow: hidden; width:280px; color: white; text-shadow: 0.1em 0.1em 0.1em black;">
-      <div class="jp-title" aria-label="title">&nbsp;</div>
+<div id="jp_container_audio_1" class="jp-flat-audio" role="application" aria-label="media player">
+  <div class="jp-play-control jp-control">
+    <button class="jp-play jp-button" role="button" aria-label="play" tabindex="0"></button>
+  </div>
+  <div class="jp-bar">
+    <div class="jp-seek-bar jp-seek-bar-display"></div>
+    <div class="jp-seek-bar">
+      <div class="jp-play-bar"></div>
+      <div class="jp-details"><span class="jp-title" aria-label="title"></span></div>
+      <div class="jp-timing"><span class="jp-duration" role="timer" aria-label="duration"></span></div>
     </div>
-        </div><!-- .jp-audio -->
+  </div>
+  <div class="jp-no-solution">
+    Media Player Error<br />
+    Update your browser or Flash plugin
+  </div>
+</div>
+
+</div>
 		
 </div>
  
@@ -167,9 +167,13 @@ switch ($page) {
     <script src="js/app.js"></script>
     <script src="http://code.jquery.com/jquery-1.11.2.min.js"></script>
 <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-    <script type="text/javascript" src="js/vendor/jquery.jplayer.min.js"></script>
-    <script type="text/javascript" src="js/vendor/jplayer.playlist.min.js"></script>
+    
+    
     <script type="text/javascript" src="js/mainplayer.js"></script>
+
+    <script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/jquery.jplayer.js"></script>
+<script type="text/javascript" src="js/flat.audio.js"></script>
 
     <!-- SPLAYER JSSSSSSSSSS-->
 
